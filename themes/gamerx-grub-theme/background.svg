@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  GamerX OS · GRUB background v0
+  Renders to background.png at 1920x1080 (handled by build script).
+  License: CC-BY-NC-SA 4.0 · GamerX
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="g1" cx="22%" cy="32%" r="62%">
+      <stop offset="0%"  stop-color="#7C3AED" stop-opacity="0.85"/>
+      <stop offset="55%" stop-color="#11162A" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0A0E1A" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="82%" cy="68%" r="55%">
+      <stop offset="0%"  stop-color="#FF2EC4" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#0A0E1A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g3" cx="60%" cy="22%" r="44%">
+      <stop offset="0%"  stop-color="#00D9FF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0A0E1A" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="0.6" fill="#E6EAF8" opacity="0.16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#0A0E1A"/>
+  <rect width="1920" height="1080" fill="url(#g1)"/>
+  <rect width="1920" height="1080" fill="url(#g2)"/>
+  <rect width="1920" height="1080" fill="url(#g3)"/>
+  <rect width="1920" height="1080" fill="url(#dots)"/>
+</svg>

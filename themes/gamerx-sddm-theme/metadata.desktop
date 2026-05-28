@@ -1,0 +1,16 @@
+[SddmGreeterTheme]
+Name=GamerX
+Description=GamerX OS greeter — duotone aurora, hyprlock-style password field, optional video backdrop.
+Author=GamerX
+Copyright=© 2026 GamerX
+License=GPL-3.0-or-later
+Type=sddm-theme
+Version=0.1.0
+Website=https://github.com/GamerXECO-sys55/gamerx-os
+Screenshot=preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Theme-Id=gamerx
+Theme-API=2.0
+QtVersion=6

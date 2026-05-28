@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=GamerX OS
+Description=Animated GamerX orb pulsing on a deep aurora background.
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/gamerx
+ScriptFile=/usr/share/plymouth/themes/gamerx/gamerx.script

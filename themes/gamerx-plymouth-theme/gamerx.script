@@ -1,0 +1,72 @@
+# GamerX OS Plymouth script
+# A pulsing duotone orb over an aurora gradient. Single-script theme — no
+# pre-rendered animation frames means tiny package size and crisp rendering
+# at any resolution.
+
+Window.SetBackgroundTopColor(0.039, 0.055, 0.102);     # #0A0E1A
+Window.SetBackgroundBottomColor(0.067, 0.086, 0.165);  # #11162A
+
+# ---- Background gradient image (single PNG, scaled to fill) ----------------
+bg_image  = Image("background.png");
+bg_sprite = Sprite();
+bg_sprite.SetImage(bg_image.Scale(Window.GetWidth(), Window.GetHeight()));
+bg_sprite.SetX(0);
+bg_sprite.SetY(0);
+bg_sprite.SetZ(-100);
+
+# ---- GamerX orb at center --------------------------------------------------
+orb_image  = Image("orb.png");
+orb_sprite = Sprite();
+orb_w = orb_image.GetWidth();
+orb_h = orb_image.GetHeight();
+orb_sprite.SetImage(orb_image);
+orb_sprite.SetX((Window.GetWidth()  - orb_w) / 2);
+orb_sprite.SetY((Window.GetHeight() - orb_h) / 2 - 40);
+orb_sprite.SetZ(0);
+
+# ---- "GamerX OS" wordmark below --------------------------------------------
+mark_image  = Image("wordmark.png");
+mark_sprite = Sprite();
+mark_w = mark_image.GetWidth();
+mark_h = mark_image.GetHeight();
+mark_sprite.SetImage(mark_image);
+mark_sprite.SetX((Window.GetWidth()  - mark_w) / 2);
+mark_sprite.SetY((Window.GetHeight() - mark_h) / 2 + (orb_h / 2) + 10);
+mark_sprite.SetZ(0);
+
+# ---- Pulse animation -------------------------------------------------------
+fun refresh_callback() {
+    # Gentle 1.6Hz pulse on the orb opacity.
+    t = Plymouth.GetTime();
+    pulse = 0.7 + 0.3 * Math.Sin(t * 4.5);
+    orb_sprite.SetOpacity(pulse);
+}
+Plymouth.SetRefreshFunction(refresh_callback);
+
+# ---- Boot progress (no visible bar — cleanliness over information) ---------
+fun progress_callback(duration, progress) {
+    # Future: a thin progress line under the wordmark. Left blank for now.
+}
+Plymouth.SetBootProgressFunction(progress_callback);
+
+# ---- Password prompt (full-disk encryption / keyfile) ----------------------
+fun dialog_setup() {
+    local.box;
+    box.image = Image("box.png");
+    box.sprite = Sprite();
+    box.sprite.SetImage(box.image);
+    box.x = (Window.GetWidth()  - box.image.GetWidth())  / 2;
+    box.y = (Window.GetHeight() - box.image.GetHeight()) / 2 + 200;
+    box.sprite.SetX(box.x);
+    box.sprite.SetY(box.y);
+    box.sprite.SetZ(2);
+
+    global.dialog = box;
+}
+
+fun display_password_callback(prompt, bullets) {
+    if (!global.dialog) dialog_setup();
+    # We re-use the wordmark as a prompt label; the box.png graphic is the
+    # input area. Bullet rendering left to default Plymouth chrome.
+}
+Plymouth.SetDisplayPasswordFunction(display_password_callback);
