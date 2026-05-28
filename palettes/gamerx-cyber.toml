@@ -1,0 +1,45 @@
+[meta]
+id          = "gamerx-cyber"
+name        = "GamerX Cyber"
+mode        = "dark"
+default     = false
+author      = "GamerX"
+license     = "CC-BY-NC-SA-4.0"
+
+[base]
+bg          = "#0A0E1A"
+bg_alt      = "#11162A"
+surface     = "#152141"
+surface_2   = "#1F2D55"
+fg          = "#E6F4FF"
+fg_dim      = "#7892C4"
+border      = "#1F2D55"
+
+[accent]
+primary     = "#00D9FF"  # cyan
+secondary   = "#FF2EC4"  # magenta
+tertiary    = "#7C3AED"  # purple
+
+[state]
+warn        = "#FFB347"
+error       = "#FF5C7C"
+success     = "#5BE3A1"
+info        = "#00D9FF"
+
+[terminal]
+black         = "#0A0E1A"
+red           = "#FF5C7C"
+green         = "#5BE3A1"
+yellow        = "#FFB347"
+blue          = "#00D9FF"
+magenta       = "#FF2EC4"
+cyan          = "#5BE3D9"
+white         = "#E6F4FF"
+bright_black  = "#1F2D55"
+bright_red    = "#FF8AA0"
+bright_green  = "#8AEDB8"
+bright_yellow = "#FFD68A"
+bright_blue   = "#5CE5FF"
+bright_magenta= "#FF8ED9"
+bright_cyan   = "#8AEDE5"
+bright_white  = "#FFFFFF"

@@ -1,0 +1,46 @@
+[meta]
+id          = "gruvbox-dark"
+name        = "Gruvbox Dark"
+mode        = "dark"
+default     = false
+author      = "morhetz"
+license     = "MIT"
+upstream    = "https://github.com/morhetz/gruvbox"
+
+[base]
+bg          = "#282828"
+bg_alt      = "#1D2021"
+surface     = "#3C3836"
+surface_2   = "#504945"
+fg          = "#EBDBB2"
+fg_dim      = "#A89984"
+border      = "#504945"
+
+[accent]
+primary     = "#FE8019"  # orange
+secondary   = "#FABD2F"  # yellow
+tertiary    = "#B8BB26"  # green
+
+[state]
+warn        = "#FABD2F"
+error       = "#FB4934"
+success     = "#B8BB26"
+info        = "#83A598"
+
+[terminal]
+black         = "#282828"
+red           = "#CC241D"
+green         = "#98971A"
+yellow        = "#D79921"
+blue          = "#458588"
+magenta       = "#B16286"
+cyan          = "#689D6A"
+white         = "#A89984"
+bright_black  = "#928374"
+bright_red    = "#FB4934"
+bright_green  = "#B8BB26"
+bright_yellow = "#FABD2F"
+bright_blue   = "#83A598"
+bright_magenta= "#D3869B"
+bright_cyan   = "#8EC07C"
+bright_white  = "#EBDBB2"

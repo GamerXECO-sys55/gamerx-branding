@@ -1,0 +1,14 @@
+NAME="GamerX OS"
+PRETTY_NAME="GamerX OS"
+ID=gamerx
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;124;58;237"
+HOME_URL="https://github.com/GamerXECO-sys55/gamerx-os"
+DOCUMENTATION_URL="https://github.com/GamerXECO-sys55/gamerx-docs"
+SUPPORT_URL="https://github.com/GamerXECO-sys55/gamerx-os/issues"
+BUG_REPORT_URL="https://github.com/GamerXECO-sys55/gamerx-os/issues"
+PRIVACY_POLICY_URL="https://github.com/GamerXECO-sys55/gamerx-docs/blob/main/docs/privacy.md"
+LOGO=gamerx-os
+VARIANT="GamerX OS"
+VARIANT_ID=vanilla

@@ -1,0 +1,46 @@
+[meta]
+id          = "nord"
+name        = "Nord"
+mode        = "dark"
+default     = false
+author      = "Arctic Ice Studio"
+license     = "MIT"
+upstream    = "https://www.nordtheme.com"
+
+[base]
+bg          = "#2E3440"
+bg_alt      = "#3B4252"
+surface     = "#434C5E"
+surface_2   = "#4C566A"
+fg          = "#ECEFF4"
+fg_dim      = "#D8DEE9"
+border      = "#4C566A"
+
+[accent]
+primary     = "#88C0D0"  # frost-2
+secondary   = "#81A1C1"  # frost-3
+tertiary    = "#5E81AC"  # frost-4
+
+[state]
+warn        = "#EBCB8B"
+error       = "#BF616A"
+success     = "#A3BE8C"
+info        = "#88C0D0"
+
+[terminal]
+black         = "#3B4252"
+red           = "#BF616A"
+green         = "#A3BE8C"
+yellow        = "#EBCB8B"
+blue          = "#81A1C1"
+magenta       = "#B48EAD"
+cyan          = "#88C0D0"
+white         = "#E5E9F0"
+bright_black  = "#4C566A"
+bright_red    = "#BF616A"
+bright_green  = "#A3BE8C"
+bright_yellow = "#EBCB8B"
+bright_blue   = "#81A1C1"
+bright_magenta= "#B48EAD"
+bright_cyan   = "#8FBCBB"
+bright_white  = "#ECEFF4"

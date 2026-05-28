@@ -1,0 +1,46 @@
+[meta]
+id          = "rose-pine"
+name        = "Rosé Pine"
+mode        = "dark"
+default     = false
+author      = "Rosé Pine team"
+license     = "MIT"
+upstream    = "https://rosepinetheme.com"
+
+[base]
+bg          = "#191724"
+bg_alt      = "#1F1D2E"
+surface     = "#26233A"
+surface_2   = "#403D52"
+fg          = "#E0DEF4"
+fg_dim      = "#908CAA"
+border      = "#403D52"
+
+[accent]
+primary     = "#C4A7E7"  # iris
+secondary   = "#9CCFD8"  # foam
+tertiary    = "#EBBCBA"  # rose
+
+[state]
+warn        = "#F6C177"  # gold
+error       = "#EB6F92"  # love
+success     = "#9CCFD8"  # foam
+info        = "#31748F"  # pine
+
+[terminal]
+black         = "#26233A"
+red           = "#EB6F92"
+green         = "#31748F"
+yellow        = "#F6C177"
+blue          = "#9CCFD8"
+magenta       = "#C4A7E7"
+cyan          = "#EBBCBA"
+white         = "#E0DEF4"
+bright_black  = "#403D52"
+bright_red    = "#EB6F92"
+bright_green  = "#31748F"
+bright_yellow = "#F6C177"
+bright_blue   = "#9CCFD8"
+bright_magenta= "#C4A7E7"
+bright_cyan   = "#EBBCBA"
+bright_white  = "#E0DEF4"

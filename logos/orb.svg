@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  GamerX OS · Orb mark v0 (programmatic)
+  License: CC-BY-NC-SA 4.0 · GamerX
+  Used at small sizes (favicon, tray, GRUB, Plymouth pulse).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="GamerX OS mark">
+  <defs>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#FF2EC4" stop-opacity="0.95"/>
+      <stop offset="50%"  stop-color="#7C3AED" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#00D9FF" stop-opacity="0.75"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"  stop-color="#00D9FF"/>
+      <stop offset="100%" stop-color="#FF2EC4"/>
+    </linearGradient>
+    <filter id="halo" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer hex ring -->
+  <g filter="url(#halo)">
+    <path d="M128 24 L218 76 L218 180 L128 232 L38 180 L38 76 Z"
+          fill="none" stroke="url(#ring)" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Inner orb -->
+  <circle cx="128" cy="128" r="56" fill="url(#core)"/>
+  <circle cx="128" cy="128" r="56" fill="none" stroke="#FF2EC4" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Highlight glint -->
+  <ellipse cx="110" cy="108" rx="22" ry="10" fill="#E6EAF8" opacity="0.35"/>
+
+  <!-- Orbit accent -->
+  <circle cx="128" cy="128" r="80" fill="none" stroke="#00D9FF" stroke-width="1.2" opacity="0.4" stroke-dasharray="2 6"/>
+</svg>

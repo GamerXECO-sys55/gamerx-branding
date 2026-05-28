@@ -1,0 +1,46 @@
+[meta]
+id          = "tokyo-night"
+name        = "Tokyo Night"
+mode        = "dark"
+default     = false
+author      = "enkia"
+license     = "MIT"
+upstream    = "https://github.com/enkia/tokyo-night-vscode-theme"
+
+[base]
+bg          = "#1A1B26"
+bg_alt      = "#16161E"
+surface     = "#24283B"
+surface_2   = "#414868"
+fg          = "#C0CAF5"
+fg_dim      = "#9AA5CE"
+border      = "#414868"
+
+[accent]
+primary     = "#7AA2F7"
+secondary   = "#BB9AF7"
+tertiary    = "#7DCFFF"
+
+[state]
+warn        = "#E0AF68"
+error       = "#F7768E"
+success     = "#9ECE6A"
+info        = "#7DCFFF"
+
+[terminal]
+black         = "#15161E"
+red           = "#F7768E"
+green         = "#9ECE6A"
+yellow        = "#E0AF68"
+blue          = "#7AA2F7"
+magenta       = "#BB9AF7"
+cyan          = "#7DCFFF"
+white         = "#A9B1D6"
+bright_black  = "#414868"
+bright_red    = "#F7768E"
+bright_green  = "#9ECE6A"
+bright_yellow = "#E0AF68"
+bright_blue   = "#7AA2F7"
+bright_magenta= "#BB9AF7"
+bright_cyan   = "#7DCFFF"
+bright_white  = "#C0CAF5"
